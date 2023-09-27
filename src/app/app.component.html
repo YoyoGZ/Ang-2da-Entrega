@@ -1,13 +1,13 @@
 <h1> {{ title}}</h1>
 <br/>
-{{ mrcontrol }}
+{{ mrControl }}
 
 <br/>
 <ul>
   <li class="lista" *ngFor="let alumno of alumnos" >
     <div [ngClass]="{
-      'green': mrcontrol === 9,
-      'orangered': mrcontrol >= 12 }">
+      'green': mrControl === 9,
+      'orangered': mrControl >= 12 }">
        {{ alumno | uppercase }}</div> 
     
   </li>
@@ -16,7 +16,7 @@
 <br/>
 
 <h2> Ng Style
-  <div [ngStyle]="{'font-size': MyStile}">
+  <div [ngStyle]="{'font-size': MyStyle}">
     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
   </div> 
 </h2>
@@ -31,7 +31,7 @@
 </h2>
 
 <h2> Pipes
- <p style="margin-left: 25px"> Fecha actual: {{ IsTheday | date: 'dd/MM/YYYY' }} </p>  
+ <p style="margin-left: 25px"> Fecha actual: {{ IsTheDate | date: 'dd/MM/YYYY' }} </p>  
 </h2>
 
 
